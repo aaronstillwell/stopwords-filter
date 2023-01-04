@@ -40,7 +40,7 @@ jobs:
       - run: gem build stopwords-filter2
       - run:
           name: Publish version << pipeline.git.tag >>
-          command: gem push stopwords-filter2-<< pipeline.git.tag >>
+          command: gem push stopwords-filter2-<< pipeline.git.tag >>.gem
       - run: shred -u ~/.gem/credentials
 
 workflows:
