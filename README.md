@@ -12,13 +12,13 @@ Quick guide
 
 just type
 
-```
+```ruby
 gem install stopwords-filter2
 ```
 
 or
 
-```
+```ruby
 # Don't forget the 'require:'
 gem 'stopwords-filter2', require: 'stopwords'
 ```
@@ -29,7 +29,7 @@ in your Gemfile.
 
   1. Simple version
 
-```
+```ruby
 stopwords = ['by', 'written', 'from']
 filter = Stopwords::Filter.new stopwords
 
@@ -43,7 +43,7 @@ filter.stopword? 'by'
   2. Snowball version
 
 
-```
+```ruby
 filter = Stopwords::Snowball::Filter.new "en"
 filter.filter 'guide by douglas adams'.split
 # ['guide', 'douglas', 'adams']
@@ -91,14 +91,14 @@ How this thing works?
 
 Main class of this 'library' is Stopwords::Filter You just create a new object with an array of stopwords
 
-```
+```ruby
 stopwords = ['by', 'written', 'from']
 filter = Stopwords::Filter.new stopwords
 ```
 
 And then you have it, you just can filter
 
-```
+```ruby
 filter.filter 'guide by douglas adams'.split  #-> ['guide', 'douglas', 'adams']
 ```
 
@@ -114,13 +114,13 @@ How do I use that snowball thing?
 
 You just create the filter with the locale you want to use
 
-```
+```ruby
 filter = Stopwords::Snowball::Filter.new "en"
 ```
 
 And then you filter without worrying about the exact stopwords used
 
-```
+```ruby
 filter.filter 'guide by douglas adams'.split  #-> ['guide', 'douglas', 'adams']
 ```
 
