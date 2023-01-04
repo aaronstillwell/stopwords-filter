@@ -26,6 +26,7 @@ jobs:
             mkdir -p ~/.gem
             echo ":rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
             chmod 0600 ~/.gem/credentials
+      - run: gem build stopwords-filter2
       - run:
           name: Publish version << pipeline.git.tag >>
           command: gem push stopwords-filter2-<< pipeline.git.tag >>

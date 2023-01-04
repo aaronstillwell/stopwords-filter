@@ -7,14 +7,14 @@ Gem::Specification.new do |s|
   s.name = %q{stopwords-filter2}
   s.version = "0.1.0"
 
-  s.required_ruby_version '>= 2.4'
+  s.required_ruby_version = '>= 2.4'
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Aaron Stillwell", "David J. Brenes"]
   s.date = %q{2023-02-04}
   s.description = %q{Small library that allows you to create a simple stopwords filter or use some based on Snowball stopwords lists}
   s.email = %q{stillwell.mailbox@gmail.com}
   s.extra_rdoc_files = [
-    "CHANGELOG",
+    "CHANGELOG.md",
     "LICENSE.txt",
     "README.md"
   ]
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     locale_files << locale_file
   end
   s.files = [
-    "CHANGELOG",
+    "CHANGELOG.md",
     "Gemfile",
     "Gemfile.lock",
     "README.md",
