@@ -1,9 +1,9 @@
-Stopwords Filter
+Stopwords Filter (2)
 ================
 
-[![Build Status](https://travis-ci.org/brenes/stopwords-filter.svg?branch=master)](https://travis-ci.org/brenes/stopwords-filter)
+This project is a fork of a very simple and naive implementation of a stopwords filter by @brenes. It remove a list of banned words (stopwords) from a sentence.
 
-This project is a very simple and naive implementation of a stopwords filter that remove a list of banned words (stopwords) from a sentence.
+Since the original repository appears to be no longer maintained, this fork aims to keep the project maintained and usable across current and future ruby versions.
 
 Quick guide
 -----------
@@ -13,14 +13,14 @@ Quick guide
 just type
 
 ```
-gem install stopwords-filter
+gem install stopwords-filter2
 ```
 
 or
 
 ```
 # Don't forget the 'require:'
-gem 'stopwords-filter', require: 'stopwords'
+gem 'stopwords-filter2', require: 'stopwords'
 ```
 
 in your Gemfile.
@@ -165,8 +165,10 @@ Anything else?
 
 In a future version I would like to include a chaining filter where you include a series of operations and they are executed in a lineal order, just like the [Pipes and Filters design pattern][wikipedia_pipes_filters]
 
-Ackonowledgments
+Acknowledgments
 ----------------
+
+Thanks to @brenes who is the author of the [original gem](https://github.com/brenes/stopwords-filter) (published under `stopwords-filter`).
 
 Thanks to @s2gatev who added the `stopword?` method and the sieve class to this gem
 

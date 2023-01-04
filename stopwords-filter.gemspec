@@ -4,14 +4,15 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{stopwords-filter}
-  s.version = "0.7.0"
+  s.name = %q{stopwords-filter2}
+  s.version = "0.1.0"
 
+  s.required_ruby_version '>= 2.4'
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["David J. Brenes"]
-  s.date = %q{2021-12-19}
+  s.authors = ["Aaron Stillwell", "David J. Brenes"]
+  s.date = %q{2023-02-04}
   s.description = %q{Small library that allows you to create a simple stopwords filter or use some based on Snowball stopwords lists}
-  s.email = %q{davidjbrenes@gmail.com}
+  s.email = %q{stillwell.mailbox@gmail.com}
   s.extra_rdoc_files = [
     "CHANGELOG",
     "LICENSE.txt",
@@ -36,7 +37,7 @@ Gem::Specification.new do |s|
     "spec/lib/snowball_filter_spec.rb",
     "spec/spec_helper.rb"
   ] + locale_files
-  s.homepage = %q{http://github.com/brenes/stopwords-filter}
+  s.homepage = %q{http://github.com/aaronstillwell/stopwords-filter2}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
